@@ -1,0 +1,7 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+# ... leave the rest of your collections exactly as they are
