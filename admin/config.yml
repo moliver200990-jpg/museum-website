@@ -7,7 +7,7 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Blog/News"
     folder: "blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -15,3 +15,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events Calendar"
+    folder: "events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Event Title", name: "title", widget: "string" }
+      - { label: "Event Date & Time", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string", default: "Veterans Military Museum" }
+      - { label: "Description", name: "body", widget: "markdown" }
