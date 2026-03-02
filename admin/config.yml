@@ -14,6 +14,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "events"
@@ -25,4 +26,5 @@ collections:
       - { label: "Event Title", name: "title", widget: "string" }
       - { label: "Event Date & Time", name: "date", widget: "datetime" }
       - { label: "Location", name: "location", widget: "string", default: "Veterans Military Museum" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Description", name: "body", widget: "markdown" }
