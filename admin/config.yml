@@ -4,4 +4,14 @@ backend:
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
-# ... leave the rest of your collections exactly as they are
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
